@@ -1,10 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { useTaskStore } from '../../store/useTaskStore';
 import { getPriorityColor } from '../../utils/dateUtils';
 
 const TimelineView: React.FC = () => {
   const { filteredTasks } = useTaskStore();
-  const [scrollLeft, setScrollLeft] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   
   // Get date range for current month
