@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef} from 'react';
 import { useTaskStore } from '../../store/useTaskStore';
 import type { Status } from '../../types';
 import { formatDate, isOverdue, getPriorityColor } from '../../utils/dateUtils';
